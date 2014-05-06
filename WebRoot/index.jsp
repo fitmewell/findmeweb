@@ -18,70 +18,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
 
   </head>
- 	<style type="text/css">
-#topDiv{
-	background-color:#C03;
-	width:auto;
-	margin:0 auto;
-	margin-top:10px;
-	height:40px;
-}
-#topDiv img{
-	height:80px;
-	float:left;
-}
-#topDiv ul{
-	background-color:#C03;
-	height:40px;
-	width:auto;
-}
-
-#topDiv ul li{
-	float:right;
-	line-height:40px;
-	padding:0 10px;
-	list-style:none;
-	margin-right:5px;
-	color:#FFF;
-}
-
-.showDiv{
-	overflow:auto;
-	height:500px;
-	border:3px solid #C03;
-	margin-top:10px;
-}
-#rightDiv{
-	width:70%;
-	float:right;
-	text-align:center;
-	overflow:auto;
-}
-#rightDiv table{
-	vertical-align:middle;
-	margin-top:150px;
-	width:90%;
-	margin-left:5%;
-}
-#leftDiv{
-	width:25%;
-	float:left;
-}
-#leftDiv p{
-	text-align:left;
-	text-indent:2em;
-	padding:10px;
-}
-.hide{
-	display:none;
-}
-.show{
-	display:block;
-}
-</style>
-<script type="text/javascript">
+<script type="text/javascript" >
 	function mainpageShow(){
 		document.getElementById("leftDiv").style.display="block";
 		document.getElementById("rightDiv").style.display="block";
