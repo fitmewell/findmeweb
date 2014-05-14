@@ -2,16 +2,20 @@ package com.hongqi.findmeWeb;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class loginCheck extends HttpServlet {
+public class logOut extends HttpServlet {
 
-	public loginCheck() {
+	public logOut() {
 		super();
 	}
 
@@ -25,35 +29,24 @@ public class loginCheck extends HttpServlet {
 			throws ServletException, IOException {
 
 		String username = request.getParameter("u");
-		String password = request.getParameter("p");
-		String result = null;
-		String returnM = "";
-		boolean pass = false;
-
+		Connection conn;
+		Statement stmt;
+		ResultSet res;
+		
 		try {
-			DBMCheckLogin check = new DBMCheckLogin(username, password);
-			result = check.getResult();
-			pass = check.pass();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(
+					"jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_findmeweb",
+					"mmzw05342y", "0kiijhjjiw4jk45zz50kw4210m51xikml2w0xk2l");
+			// conn =
+			// DriverManager.getConnection("jdbc:mysql://localhost:3306/MyAppDB","root",
+			// "root");
+			stmt = conn.createStatement();
+			stmt.execute("update USERLIST set online = 'false' where USERNAME like '"
+					+ username + "'");
+		}catch (Exception e){
 			e.printStackTrace();
 		}
-
-		// Boolean s_ = (result.equals(password));
-
-		// String message = "Hello " +"\r\n"+ username +"\r\n"+ password+"\r\n"+
-		// result+"\r\n"+ s_;
-
-		PrintWriter out = response.getWriter();
-
-		if (!pass) {
-			returnM = "false";
-		} else if (pass) {
-			returnM = result;
-		}
-		out.print(returnM);
-		out.flush();
-		out.close();
 	}
 
 	@Override

@@ -1,80 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
-  <display-name></display-name>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>logincheck</servlet-name>
-    <servlet-class>com.hongqi.findmeWeb.loginCheck</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>logincheck</servlet-name>
-    <url-pattern>/servlet/logincheck</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>GetFriendLocal</servlet-name>
-    <servlet-class>com.hongqi.findmeWeb.GetFriendLocal</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>GetFriendLocal</servlet-name>
-    <url-pattern>/servlet/GetFriendLocal</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>updataLocal</servlet-name>
-    <servlet-class>com.hongqi.findmeWeb.updataLocal</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>updataLocal</servlet-name>
-    <url-pattern>/servlet/updataLocal</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>getFriendList</servlet-name>
-    <servlet-class>com.hongqi.findmeWeb.getFriendList</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>getFriendList</servlet-name>
-    <url-pattern>/servlet/getFriendList</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>registerUser</servlet-name>
-    <servlet-class>com.hongqi.findmeWeb.registerUser</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>registerUser</servlet-name>
-    <url-pattern>/servlet/registerUser</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-    <description>fileUpdate</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>fileUpdate</servlet-name>
-    <servlet-class>com.hongqi.findmeWeb.fileUpdate</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>fileUpdate</servlet-name>
-    <url-pattern>/servlet/fileUpdate</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>addFriend</servlet-name>
-    <servlet-class>com.hongqi.findmeWeb.addFriend</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>addFriend</servlet-name>
-    <url-pattern>/servlet/addFriend</url-pattern>
-  </servlet-mapping>
-  <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name></display-name>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>logincheck</servlet-name>
+		<servlet-class>com.hongqi.findmeWeb.loginCheck</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logincheck</servlet-name>
+		<url-pattern>/servlet/logincheck</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GetFriendLocal</servlet-name>
+		<servlet-class>com.hongqi.findmeWeb.GetFriendLocal</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetFriendLocal</servlet-name>
+		<url-pattern>/servlet/GetFriendLocal</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>updataLocal</servlet-name>
+		<servlet-class>com.hongqi.findmeWeb.updataLocal</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updataLocal</servlet-name>
+		<url-pattern>/servlet/updataLocal</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>getFriendList</servlet-name>
+		<servlet-class>com.hongqi.findmeWeb.getFriendList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getFriendList</servlet-name>
+		<url-pattern>/servlet/getFriendList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>registerUser</servlet-name>
+		<servlet-class>com.hongqi.findmeWeb.registerUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registerUser</servlet-name>
+		<url-pattern>/servlet/registerUser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>fileUpdate</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>fileUpdate</servlet-name>
+		<servlet-class>com.hongqi.findmeWeb.fileUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fileUpdate</servlet-name>
+		<url-pattern>/servlet/fileUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>addFriend</servlet-name>
+		<servlet-class>com.hongqi.findmeWeb.addFriend</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addFriend</servlet-name>
+		<url-pattern>/servlet/addFriend</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>logOut</servlet-name>
+		<servlet-class>com.hongqi.findmeWeb.logOut</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logOut</servlet-name>
+		<url-pattern>/servlet/logOut</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
 </web-app>
